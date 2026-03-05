@@ -1,0 +1,13 @@
+h1 {
+  font-family: "Arial", sans-serif;
+}
+h2 {
+  font-family: "Arial", sans-serif;
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: rgb(222, 222, 222);
+  color: solid black;
+}
