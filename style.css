@@ -1,7 +1,8 @@
 body {
-  text-align: center;
   font-family: Arial, sans-serif;
-  background-color: rgb(240, 251, 255);
+  background-color: rgb(151, 179, 189);
+  margin: 0%;
+  color: #212121;
 }
 nav ul li {
   list-style: none;
@@ -9,8 +10,8 @@ nav ul li {
   margin-right: 20px;
 }
 .textbox {
-  margin: 0 auto;
-  max-width: 900px;
+  margin: auto;
+  width: 1000px;
 }
 p {
   font-size: large;
