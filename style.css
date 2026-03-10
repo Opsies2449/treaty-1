@@ -1,6 +1,5 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: rgb(151, 179, 189);
   margin: 0%;
   color: #212121;
 }
@@ -11,8 +10,26 @@ nav ul li {
 }
 .textbox {
   margin: auto;
-  width: 1000px;
+  width: 900px;
 }
 p {
-  font-size: large;
+  font-size: larger;
+}
+h2 {
+  font-size: x-large;
+}
+.container {
+  background-color: #eeeded;
+  border-color: #212121;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+  display: inline-block;
+  width: 35%;
+  margin-left: 20px;
+}
+img {
+  border-color: #212121;
+  border-style: solid;
+  border-width: 2px;
 }
