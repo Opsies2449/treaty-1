@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 body {
   font-family: Arial, sans-serif;
   margin: 0%;
@@ -24,12 +27,21 @@ h2 {
   border-style: solid;
   border-width: 2px;
   padding: 10px;
-  display: inline-block;
-  width: 35%;
   margin-left: 20px;
+}
+.container-tall {
+  min-height: 400px;
+}
+.container-short {
+  min-height: 300px;
 }
 img {
   border-color: #212121;
   border-style: solid;
   border-width: 2px;
+}
+.flex-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 25px;
 }
