@@ -1,20 +1,23 @@
+/* the * makes it so that it is applied to evrything. The box-sizing: border-box makes all the padding into the width and height of the elements.  */
 * {
   box-sizing: border-box;
+/* The body element just makes all the code in there apply to the body of the website. The font-family changes the font, which I made it into Arial. The margin is set to 0 so it removes the spacing. Color changes the color of the text, which I made it into a shade of black. The background color just changes the color of the background and now is a white color with a hint of gray. */
 }
 body {
   font-family: Arial, sans-serif;
   margin: 0%;
-  color: #212121;
+  color: #1f1f1f;
+  background-color: #f0eeee;
 }
 header {
-  background-color: rgb(74, 154, 58);
+  background-color: #377145;
   width: 100%;
   padding: 50px 0;
   margin-bottom: 50px;
 }
 footer {
-  background-color: rgb(46, 109, 180);
-  padding: 70px 0px 50px 0;
+  background-color: #1a8b3a;
+  padding: 50px 0px 50px 0;
   width: 100%;
   text-align: center;
 }
@@ -24,12 +27,12 @@ nav ul {
   padding: 0;
   margin: 0;
   list-style: none;
-  width: 1000px;
+  width: 100%;
+  max-width: 1100px;
   margin: auto;
 }
 nav ul li {
-  background-color: rgb(242, 194, 48);
-  padding: 15px 20px;
+  background-color: #f2c84a;
   border-radius: 5px;
   margin: 0 10px;
 }
@@ -37,25 +40,40 @@ nav ul li a {
   color: #000000;
   text-decoration: none;
   font-size: 18px;
+  padding: 15px 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f2c84a;
+  border-radius: 5px;
 }
 .textbox {
   margin: auto;
   margin-bottom: 50px;
-  width: 900px;
+  width: 1000px;
+}
+section {
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1200px;
 }
 p {
-  font-size: larger;
+  font-size: 25px;
 }
 h2 {
-  font-size: x-large;
+  font-size: 35px;
 }
 .container {
-  background-color: #eeeded;
+  background-color: #e6e5e5;
   border-color: #212121;
   border-style: solid;
   border-width: 2px;
-  padding: 10px;
-  margin-left: 20px;
+  padding: 20px;
+  margin-left: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .container-tall {
   min-height: 400px;
@@ -70,6 +88,41 @@ img {
 }
 .flex-wrapper {
   display: flex;
-  align-items: flex-end;
   margin-top: 25px;
+  margin-bottom: 50px;
+  justify-content: center;
+  gap: 30px;
+}
+.banner {
+  position: relative;
+  width: 90%;
+  height: 500px;
+  margin: auto;
+  margin-bottom: 50px;
+  background-image: url(images/treaty\ 1\ flag.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+.banner h1 {
+  position: relative;
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  z-index: 1;
+}
+:focus {
+  outline: 3px solid #4fa35a;
 }
