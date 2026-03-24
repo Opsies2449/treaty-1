@@ -9,6 +9,7 @@ body {
   margin: 0;
   color: #1f1f1f;
   background-color: #f0eeee;
+  line-height: 1.6;
 }
 /* Hide this element from being shown but accessible to screen readers */
 .visually-hidden {
@@ -18,26 +19,13 @@ body {
   padding: 0;
   margin: -1px;
   border: 0;
+  overflow: hidden;
 }
 /* Header goes across the whole page width and has space on the top and bottom */
 header {
   width: 100%;
-  padding: 50px 0;
-  margin-bottom: 50px;
-}
-/* Made it thicker and spans 90% of the width */
-hr {
-  border: none;
-  border-bottom: 2px solid #212121;
-  margin: 50px auto;
-  width: 90%;
-}
-/* Footer is dark blue, text is centered */
-footer {
-  background-color: #313fa9;
-  padding: 50px 0;
-  width: 100%;
-  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 40px;
 }
 /* Navigation list is evenly spaced, removed default padding and no bullets,
  centered it */
@@ -45,29 +33,35 @@ nav ul {
   display: flex;
   justify-content: space-evenly;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   list-style: none;
   width: 100%;
   max-width: 1100px;
-  margin: auto;
 }
-/* The links are in a yellow box, have some padding, rounded corners, bigger font */
+/* Made the links in a yellow box, have some padding, rounded corners, bigger font, and transition of 0.2 sec to darker shade */
 nav ul li a {
   color: #000000;
   text-decoration: none;
   font-size: 18px;
   padding: 15px 20px;
   display: block;
-  width: 100%;
-  height: 90%;
   background-color: #fcca35;
   border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
 }
-/* A box for text that is centered on the page and has some space under it */
-.textbox {
-  margin: auto;
-  margin-bottom: 50px;
-  width: 1000px;
+/* When mouse is hovered over, it is darkend, and text is underlined */
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #e0b22f;
+  text-decoration: underline;
+}
+/* Made the hr thicker and spans 90% of the width */
+hr {
+  border: none;
+  border-bottom: 2px solid #212121;
+  margin: 40px auto;
+  width: 90%;
 }
 /* Section that keeps content inside a max width and adds some space on 
    the sides so it doesn't touch the page edges */
@@ -76,58 +70,63 @@ section {
   padding: 0 30px;
   max-width: 1200px;
 }
-/* Makes paragraph text bigger */
-p {
-  font-size: 25px;
-}
 /* Headings bigger than paragraphs */
 h2 {
   font-size: 35px;
+  margin-bottom: 20px;
 }
-/* Container with background color, border, padding, 
-   center content inside and vertically aligned */
-.container {
+/* Makes paragraph text bigger */
+p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+/* This wrapper creates a single box that holds the image on the left and the text on the right. */
+.flex-wrapper {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 50px;
+  border: 2px solid #212121;
   background-color: #e6e5e5;
-  border-color: #212121;
-  border-style: solid;
-  border-width: 2px;
+  overflow: hidden;
+  flex-wrap: nowrap; /* keep image and text on the same row */
+  gap: 0;
   padding: 20px;
-  margin-left: 40px;
-  text-align: center;
+  align-items: flex-start;
+}
+/* This element styles the image inside the box so it stays on the left. */
+.flex-wrapper img {
+  width: 45%;
+  max-width: 500px;
+  height: auto;
+  border: none;
+  flex-shrink: 0;
+  margin-right: 30px;
+}
+/* This container holds the text on the right side of the box and keeps it centered. */
+.container {
+  flex: 1;
+  padding: 30px;
+  border: none;
+  background-color: transparent;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-}
-/* Big container that is tall at least 400px */
-.container-tall {
-  min-height: 400px;
-}
-/* Small container that is shorter, at least 300px */
-.container-short {
-  min-height: 300px;
+  min-width: 280px;
 }
 /* Images have black border to see better */
 img {
   border-color: #212121;
   border-style: solid;
   border-width: 2px;
-}
-/* A row of elements using flex, space in the middle, and some gap between them */
-.flex-wrapper {
-  display: flex;
-  margin-top: 25px;
-  margin-bottom: 50px;
-  justify-content: center;
-  gap: 30px;
+  max-width: 100%;
+  height: auto;
 }
 /* Banner with background image, center the image, and center the text on top */
 .banner {
   position: relative;
   width: 90%;
   height: 500px;
-  margin: auto;
-  margin-bottom: 50px;
-  background-image: url(images/treaty\ 1\ flag.webp);
+  margin: 0 auto 50px auto;
+  background-image: url("images/treaty 1 flag.webp");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -138,10 +137,7 @@ img {
 .banner::before {
   content: "";
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  inset: 0;
   background-color: rgba(0, 0, 0, 0.45);
   z-index: 0;
 }
@@ -151,9 +147,19 @@ img {
   color: white;
   font-size: 50px;
   text-align: center;
+  letter-spacing: 2px;
   z-index: 1;
 }
 /* Makes the text more bolded */
 .strong {
   font-weight: bold;
+}
+/* Footer is dark blue, text is centered */
+footer {
+  background-color: #313fa9;
+  padding: 50px 0;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
 }
