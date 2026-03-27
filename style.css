@@ -6,34 +6,23 @@
 set the text color to black, and background color to a light gray
 */
 */ body {
-  font-family: Arial, sans-serif;
   margin: 0;
   color: #1f1f1f;
   background-color: #f5f5f4;
   line-height: 1.6;
-}
-/* Hide this element from being shown but accessible to screen readers */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  border: 0;
-  overflow: hidden;
 }
 /* Header goes across the whole page width and has space on the top and bottom */
 header {
   width: 100%;
   padding: 40px 0;
   margin-bottom: 40px;
-  background-color: #eeeeee;
 }
 /* Navigation list is evenly spaced, removed default padding and no bullets,
  centered it */
 nav ul {
   display: flex;
   justify-content: space-evenly;
+  gap: 60px;
   padding: 0;
   margin: 0 auto;
   list-style: none;
@@ -51,6 +40,7 @@ nav ul li a {
   border-radius: 5px;
   font-weight: bold;
   transition: background-color 0.2s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 /* When mouse is hovered over, it is darkend, and text is underlined */
 nav ul li a:hover,
@@ -72,9 +62,18 @@ section {
   padding: 0 30px;
   max-width: 1200px;
 }
+/* Changes the size to 40px and bottom margin to 20px */
+h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
 /* size to 35px and bottom space 20px */
 h2 {
   font-size: 35px;
+  margin-bottom: 20px;
+}
+a {
+  font-size: 20px;
   margin-bottom: 20px;
 }
 /* Makes paragraph text bigger */
@@ -86,14 +85,15 @@ p {
 .flex-wrapper {
   display: flex;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
   border: 2px solid #212121;
-  background-color: #e6e5e5;
+  background-color: #f3f3f3;
   overflow: hidden;
   flex-wrap: nowrap;
   gap: 0;
   padding: 20px;
   align-items: flex-start;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 /* This element styles the image inside the box so it stays on the left. */
 .flex-wrapper img {
@@ -103,6 +103,8 @@ p {
   border: none;
   flex-shrink: 0;
   margin-right: 30px;
+  display: flex;
+  justify-content: center;
 }
 /* This container holds and styles the text on the right side of the box and keeps it centered. */
 .container {
@@ -120,37 +122,8 @@ img {
   border-style: solid;
   border-width: 1px;
   max-width: 100%;
+  border-radius: 5px;
   height: auto;
-}
-/* Banner with background image that is centered, and center the text on top */
-.banner {
-  position: relative;
-  width: 90%;
-  height: 500px;
-  margin: 0 auto 50px auto;
-  background-image: url("images/treaty 1 flag.webp");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-/* Add a dark shade on the banner so white text is readable on it */
-.banner::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.55);
-  z-index: 0;
-}
-/* Banner header that goes above the dark shade so it is visible */
-.banner h1 {
-  position: relative;
-  color: #eeeeee;
-  font-size: 50px;
-  text-align: center;
-  letter-spacing: 2px;
-  z-index: 1;
 }
 /* Makes the text more bolded */
 .strong {

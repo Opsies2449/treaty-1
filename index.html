@@ -3,7 +3,7 @@ Name: Adam L
 Course: Web Development
 Teacher: Mr. Hardman
 School: PTC
-Date last modified: Mar 25, 2026
+Date last modified: Mar 26, 2026
 -->
 <!doctype html>
 <html lang="en">
@@ -13,6 +13,39 @@ Date last modified: Mar 25, 2026
     <title>Treaty 1</title>
     <!-- External stylesheet -->
     <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Banner with background image that is centered, and center the text on top */
+      .banner {
+        position: relative;
+        width: 90%;
+        height: 500px;
+        margin: 0 auto 100px auto;
+        background-image: url("images/treaty 1 flag.webp");
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      }
+      /* Add a dark shade on the banner so white text is readable on it */
+      .banner::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+        z-index: 0;
+      }
+      /* Banner header that goes above the dark shade so it is visible */
+      .banner h1 {
+        position: relative;
+        color: #eeeeee;
+        font-size: 50px;
+        text-align: center;
+        letter-spacing: 2px;
+        z-index: 1;
+      }
+    </style>
   </head>
   <body>
     <!-- Header with navigation -->
@@ -20,7 +53,7 @@ Date last modified: Mar 25, 2026
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="signing.html">Signing</a></li>
+          <li><a href="treaty-text.html">Treaty Text</a></li>
           <li><a href="impact.html">Impact</a></li>
         </ul>
       </nav>
@@ -45,13 +78,13 @@ Date last modified: Mar 25, 2026
               Treaties are agreements made between the Canadian government and
               the Indigenous people who were already living on the land. These
               agreements were usually about sharing the land and protecting
-              their rights.
-            </p>
-            <p>
-              Treaty 1 is one of the first treaties that was negotiated and
-              signed in 1871. The area of Treaty 1 covered most of southern
-              Manitoba, including cities like <span>Winnipeg</span> and
-              <span>Brandon</span>, along with other municipalities.
+              their rights. Treaty 1 is one of the first treaties that was
+              negotiated and signed in 1871. The area of Treaty 1 covered most
+              of southern Manitoba, including cities like
+              <span>Winnipeg</span> and <span>Brandon</span>, along with other
+              municipalities. Today, treaty 1 is now apart of the province of
+              Manitoba, and some of the treaty terms are still in effect,but
+              most of it is now gone.
             </p>
           </div>
         </div>
@@ -70,7 +103,29 @@ Date last modified: Mar 25, 2026
               The treaty was signed at Lower Fort Garry, also known as the Stone
               Fort. It is located near the town of Selkirk, northeast of
               Winnipeg. The Canadian government chose Lower Fort Garry because
-              it was a convenient and strategic meeting place.
+              it was a convenient and strategic meeting place. Lower Fort Garry
+              today is now a historic site and a museum that has history of the
+              signing. The place even has reenactors simulating what it was like
+              to be there back then.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Who signed Treaty 1?</h2>
+        <div class="flex-wrapper">
+          <img
+            src="images/treaty 1 signing.webp"
+            alt="a black and white drawing of settlers and the indeginous people" />
+          <div>
+            <p>
+              Treaty 1 was signed by the Canadian government and the Indigenous
+              peoples. The treaty involved the Anishinaabe, swampy Cree, and the
+              Oji-Cree people. The bands that participated are the Peguis,
+              Sagkeeng, brokenhead Roseau River, and the Portage band, with
+              Adams Archibald as the lieutenant governor, Wemyss Simpson as the
+              commissioner, and James McKay as the translator, and chief Peguis
+              who represented the indigenous people.
             </p>
           </div>
         </div>
