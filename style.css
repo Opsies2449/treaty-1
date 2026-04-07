@@ -1,24 +1,32 @@
-/* Make all elements include padding and border into the element size */
+/* Make all elements include padding and border into the element size and makes 
+  the line height to a size of 140% */
 * {
   box-sizing: border-box;
+  line-height: 140%;
 }
+
 /* Set the default font to Arial, removed the default space around the page, 
-set the text color to black, and background color to a light gray
-*/
-*/ body {
-  margin: 0;
-  color: #1f1f1f;
-  background-color: #f5f5f4;
-  line-height: 1.6;
+   set the text color to black, and background color to a light gray */
+html {
+  font-size: 62.5%;
 }
+
+body {
+  margin: 0;
+  color: #1c1c1c;
+  background-color: #eeeeee;
+  font-size: 1.8rem;
+}
+
 /* Header goes across the whole page width and has space on the top and bottom */
 header {
   width: 100%;
   padding: 40px 0;
   margin-bottom: 40px;
 }
+
 /* Navigation list is evenly spaced, removed default padding and no bullets,
- centered it */
+   centered it */
 nav ul {
   display: flex;
   justify-content: space-evenly;
@@ -29,13 +37,12 @@ nav ul {
   width: 100%;
   max-width: 1100px;
 }
-/* Made the links in a yellow box, have some padding, rounded corners, 
-bigger font, and transition of 0.2 sec to darker shade */
+/* Made the links in a yellow box, have some padding, rounded corners, bigger font, and transition of 0.2 sec to darker shade */
 nav ul li a {
   color: #000000;
   text-decoration: none;
-  font-size: 18px;
-  padding: 15px 20px;
+  font-size: 2.2rem;
+  padding: 15px 25px;
   display: block;
   background-color: #f3c53b;
   border-radius: 5px;
@@ -43,13 +50,13 @@ nav ul li a {
   transition: background-color 0.2s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-/* When mouse is hovered over, it is darkend, and text is underlined. 
-Chose a yellow color because it stands out on the white */
+/* When mouse is hovered over, it is darkend, and text is underlined */
 nav ul li a:hover,
 nav ul li a:focus {
   background-color: #e0b22f;
   text-decoration: underline;
 }
+
 /* Made the hr thicker and spans 90% of the width */
 hr {
   border: none;
@@ -57,40 +64,46 @@ hr {
   margin: 40px auto;
   width: 90%;
 }
+
 /* Section that keeps content inside a max width and adds some space on 
    the sides so it doesn't touch the page edges */
 section {
   margin: 0 auto;
   padding: 0 30px;
-  max-width: 1200px;
+  max-width: 1300px;
 }
+
 /* Changes the size to 40px and bottom margin to 20px */
 h1 {
-  font-size: 40px;
+  font-size: 4.4rem;
   margin-bottom: 20px;
 }
+
 /* size to 35px and bottom space 20px */
 h2 {
-  font-size: 35px;
+  font-size: 2.8rem;
+  font-style: italic;
   margin-bottom: 20px;
 }
+
 a {
-  font-size: 20px;
+  font-size: 1.8rem;
   margin-bottom: 20px;
 }
+
 /* Makes paragraph text bigger */
 p {
-  font-size: 20px;
+  font-size: 2rem;
+  font-family: sans-serif;
   margin-bottom: 20px;
 }
-/* This wrapper creates a single box that holds the image on the left 
-and the text on the right on the same line */
+/* This wrapper creates a single box that holds the image on the left and the text on the right on the same line */
 .flex-wrapper {
   display: flex;
   margin-top: 25px;
   margin-bottom: 100px;
   border: 2px solid #212121;
-  background-color: #f3f3f3;
+  background-color: #eeeeee;
   overflow: hidden;
   flex-wrap: nowrap;
   gap: 0;
@@ -98,7 +111,8 @@ and the text on the right on the same line */
   align-items: flex-start;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-/* This element styles the image inside the box so it stays on the left. */
+
+/* This element styles the image inside the box so it stays on the left */
 .flex-wrapper img {
   width: 45%;
   max-width: 500px;
@@ -109,30 +123,25 @@ and the text on the right on the same line */
   display: flex;
   justify-content: center;
 }
-/* This container holds and styles the text on the right side of the box 
-and keeps it centered. */
+/* This container holds and styles the text on the right side of the box and keeps it centered. */
 .container {
   flex: 1;
   padding: 30px;
   border: none;
-  background-color: transparent;
   display: flex;
   flex-direction: column;
   min-width: 280px;
 }
+
 /* Images have black border to see better */
 img {
   border-color: #212121;
   border-style: solid;
   border-width: 1px;
-  max-width: 100%;
   border-radius: 5px;
   height: auto;
 }
-/* Makes the text more bolded */
-.strong {
-  font-weight: bold;
-}
+
 /* Makes the footer background blue, and the text is centered */
 footer {
   background-color: #313fa9;
@@ -141,4 +150,9 @@ footer {
   text-align: center;
   color: whitesmoke;
   font-size: 18px;
+}
+
+/* The bolded texts indicates important things */
+strong {
+  font-weight: bold;
 }

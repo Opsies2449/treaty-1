@@ -3,7 +3,7 @@ Name: Adam L
 Course: Web Development
 Teacher: Mr. Hardman
 School: PTC
-Date last modified: Mar 26, 2026
+Date last modified: Apr 06, 2026
 -->
 <!doctype html>
 <html lang="en">
@@ -11,14 +11,15 @@ Date last modified: Mar 26, 2026
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 1</title>
-    <!-- External stylesheet -->
+
     <link rel="stylesheet" href="style.css" />
+
     <style>
-      /* Banner with background image that is centered, and center the text on top */
-      .banner {
+      /* Banner with background image that is centered, and center the text on top with a small shadow on the edges */
+      #banner {
         position: relative;
-        width: 90%;
-        height: 500px;
+        width: 95%;
+        height: 550px;
         margin: 0 auto 100px auto;
         background-image: url("images/treaty 1 flag.webp");
         background-size: cover;
@@ -28,16 +29,18 @@ Date last modified: Mar 26, 2026
         align-items: center;
         box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       }
+
       /* Add a dark shade on the banner so white text is readable on it */
-      .banner::before {
+      #banner::before {
         content: "";
         position: absolute;
         inset: 0;
         background-color: rgba(0, 0, 0, 0.55);
         z-index: 0;
       }
+
       /* Banner header that goes above the dark shade so it is visible */
-      .banner h1 {
+      #banner h1 {
         position: relative;
         color: #eeeeee;
         font-size: 50px;
@@ -47,8 +50,8 @@ Date last modified: Mar 26, 2026
       }
     </style>
   </head>
+
   <body>
-    <!-- Header with navigation -->
     <header>
       <nav aria-label="Main navigation">
         <ul>
@@ -59,37 +62,37 @@ Date last modified: Mar 26, 2026
       </nav>
       <hr />
     </header>
+
     <main>
-      <!-- Banner section with background image and main heading -->
-      <section class="banner">
-        <h1><span class="strong">Treaty 1</span></h1>
+      <section id="banner">
+        <h1>Treaty 1</h1>
       </section>
-      <!-- Section: What is Treaty 1 -->
+
       <section>
         <h2>What is Treaty 1?</h2>
         <div class="flex-wrapper">
           <img
-            src="images/treaty 1 map.png"
-            alt="A map showing the territory covered by Treaty 1"
-            width="500"
-            height="400" />
+            src="images/treaty 1 map.webp"
+            alt="A map showing the territories of treaty 1 and 2"
+            width="300"
+            height="350" />
           <div>
             <p>
               Treaties are agreements made between the Canadian government and
               the Indigenous people who were already living on the land. These
               agreements were usually about sharing the land and protecting
               their rights. Treaty 1 is one of the first treaties that was
-              negotiated and signed in 1871. The area of Treaty 1 covered most
-              of southern Manitoba, including cities like
-              <span>Winnipeg</span> and <span>Brandon</span>, along with other
-              municipalities. Today, treaty 1 is now apart of the province of
-              Manitoba, and some of the treaty terms are still in effect,but
+              negotiated and signed in <strong>1871</strong>. The area of Treaty
+              1 covered most of southern Manitoba, including cities like
+              <strong>Winnipeg</strong> and <strong>Brandon</strong>, along with
+              other municipalities. Today, treaty 1 is now apart of the province
+              of Manitoba, and some of the treaty terms are still in effect,but
               most of it is now gone.
             </p>
           </div>
         </div>
       </section>
-      <!-- Section: Where was Treaty 1 signed -->
+
       <section>
         <h2>Where was Treaty 1 signed?</h2>
         <div class="flex-wrapper">
@@ -100,17 +103,18 @@ Date last modified: Mar 26, 2026
             height="300" />
           <div>
             <p>
-              The treaty was signed at Lower Fort Garry, also known as the Stone
-              Fort. It is located near the town of Selkirk, northeast of
-              Winnipeg. The Canadian government chose Lower Fort Garry because
-              it was a convenient and strategic meeting place. Lower Fort Garry
-              today is now a historic site and a museum that has history of the
-              signing. The place even has reenactors simulating what it was like
-              to be there back then.
+              The treaty was signed at <strong>Lower Fort Garry</strong>, also
+              known as the Stone Fort. It is located near the town of Selkirk,
+              northeast of Winnipeg. The Canadian government chose Lower Fort
+              Garry because it was a convenient and strategic meeting place.
+              Lower Fort Garry today is now a historic site and a museum that
+              has history of the signing. The place even has reenactors
+              simulating what it was like to be there back then.
             </p>
           </div>
         </div>
       </section>
+
       <section>
         <h2>Who signed Treaty 1?</h2>
         <div class="flex-wrapper">
@@ -120,18 +124,21 @@ Date last modified: Mar 26, 2026
           <div>
             <p>
               Treaty 1 was signed by the Canadian government and the Indigenous
-              peoples. The treaty involved the Anishinaabe, swampy Cree, and the
-              Oji-Cree people. The bands that participated are the Peguis,
-              Sagkeeng, brokenhead Roseau River, and the Portage band, with
-              Adams Archibald as the lieutenant governor, Wemyss Simpson as the
-              commissioner, and James McKay as the translator, and chief Peguis
-              who represented the indigenous people.
+              peoples. The treaty involved the <strong>Anishinaabe</strong>,
+              <strong>swampy Cree</strong>, and the
+              <strong>Oji-Cree</strong> people. The bands that participated are
+              the Peguis, Sagkeeng, brokenhead Roseau River, and the Portage
+              band, with <strong>Adams Archibald</strong> as the lieutenant
+              governor, <strong>Wemyss</strong> Simpson as the commissioner, and
+              <strong>James McKay</strong> as the translator, and
+              <strong>chief Peguis</strong> who represented the Indeginous
+              people.
             </p>
           </div>
         </div>
       </section>
     </main>
-    <!-- Footer -->
+
     <footer>
       <p>&copy; 2026 Adam L</p>
     </footer>
