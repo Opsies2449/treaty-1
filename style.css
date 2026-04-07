@@ -29,7 +29,8 @@ nav ul {
   width: 100%;
   max-width: 1100px;
 }
-/* Made the links in a yellow box, have some padding, rounded corners, bigger font, and transition of 0.2 sec to darker shade */
+/* Made the links in a yellow box, have some padding, rounded corners, 
+bigger font, and transition of 0.2 sec to darker shade */
 nav ul li a {
   color: #000000;
   text-decoration: none;
@@ -42,7 +43,8 @@ nav ul li a {
   transition: background-color 0.2s ease;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
-/* When mouse is hovered over, it is darkend, and text is underlined */
+/* When mouse is hovered over, it is darkend, and text is underlined. 
+Chose a yellow color because it stands out on the white */
 nav ul li a:hover,
 nav ul li a:focus {
   background-color: #e0b22f;
@@ -81,7 +83,8 @@ p {
   font-size: 20px;
   margin-bottom: 20px;
 }
-/* This wrapper creates a single box that holds the image on the left and the text on the right on the same line */
+/* This wrapper creates a single box that holds the image on the left 
+and the text on the right on the same line */
 .flex-wrapper {
   display: flex;
   margin-top: 25px;
@@ -91,7 +94,7 @@ p {
   overflow: hidden;
   flex-wrap: nowrap;
   gap: 0;
-  padding: 20px;
+  padding: 30px;
   align-items: flex-start;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
@@ -106,7 +109,8 @@ p {
   display: flex;
   justify-content: center;
 }
-/* This container holds and styles the text on the right side of the box and keeps it centered. */
+/* This container holds and styles the text on the right side of the box 
+and keeps it centered. */
 .container {
   flex: 1;
   padding: 30px;
