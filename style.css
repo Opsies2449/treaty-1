@@ -4,8 +4,9 @@ gives feelings of happiness and warmth. I used a blue tone as the secondary
 color because blue gives the feelings of trust and security to users. The
 neutral colors are a tones of white for the bacground and text bachgrounds 
 for simplicity and cleanliness, and my other nuetral color is black for the
-texts. I picked blue and yellow overall becaues they are mostly complementary 
-colors and mant brands like IKEA or Best Buy uses them. 
+texts. I picked blue and yellow overall becaues they are mostly complementary
+colors and many brands or others like IKEA, Pokemon, Best Buy, Warner Bros,
+and the flag of Bosnia and Herzgovina uses them.
 */
 
 /*
@@ -17,8 +18,10 @@ the line height to a size of 140%
   line-height: 140%;
 }
 
-/* Removed the default space around the page, set the text color to black,
-   and background color to a light gray */
+/* 
+Removed the default space around the page, set the text color to black,
+and background color to a light gray 
+*/
 html {
   font-size: 62.5%;
 }
@@ -30,7 +33,9 @@ body {
   font-size: 2rem;
 }
 
-/* Header goes across the whole page width and has space on the top and bottom */
+/* 
+Header goes across the whole page width and has space on the top and bottom 
+*/
 header {
   width: 100%;
   padding: 40px 0;
@@ -82,13 +87,17 @@ section {
   max-width: 1300px;
 }
 
-/* Changes the size to 40px and bottom margin to 20px */
+/* 
+Changes the size to 40px and bottom margin to 20px 
+*/
 h1 {
   font-size: 4.4rem;
   margin-bottom: 20px;
 }
 
-/* size to 35px and bottom space 20px */
+/* 
+size to 35px and bottom space 20px 
+*/
 h2 {
   font-size: 2.8rem;
   font-style: italic;
@@ -100,14 +109,18 @@ a {
   margin-bottom: 20px;
 }
 
-/* Makes paragraph text bigger fonted */
+/* 
+Makes paragraph text bigger fonted 
+*/
 p {
   font-size: 2rem;
   font-family: sans-serif;
   margin-bottom: 20px;
 }
 
-/* The wrapper automatically fits around the content */
+/* 
+The wrapper automatically fits around the content 
+*/
 .flex-wrapper {
   display: flex;
   margin-top: 25px;
@@ -123,7 +136,9 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* This element styles the image inside the box so it stays on the left */
+/* 
+This element styles the image inside the box so it stays on the left 
+*/
 .flex-wrapper img {
   width: 45%;
   max-width: 500px;
@@ -135,7 +150,9 @@ p {
   justify-content: center;
 }
 
-/* Images have black border to see better */
+/* 
+Images have black border to see better 
+*/
 img {
   border-color: #212121;
   border-style: solid;
@@ -144,9 +161,11 @@ img {
   height: auto;
 }
 
-/* Makes the footer background blue, and the text is centered */
+/* 
+Makes the footer background blue, and the text is centered 
+*/
 footer {
-  background-color: #3d4aac;
+  background-color: #4757cd;
   padding: 50px 0;
   width: 100%;
   text-align: center;
@@ -154,12 +173,9 @@ footer {
   font-size: 18px;
 }
 
-/* The bolded texts indicates important things */
-strong {
-  font-weight: bold;
-}
-
-/* Skip link appears when pressing tab */
+/* 
+Skip link appears when pressing tab for accessibility
+*/
 .skip-link {
   position: absolute;
   left: -999px;
@@ -169,7 +185,9 @@ strong {
   overflow: hidden;
 }
 
-/* Styles the skip link when is focused */
+/* 
+Styles the skip link when is focused by the cursor or tab
+*/
 .skip-link:focus {
   left: 10px;
   top: 10px;
@@ -178,4 +196,11 @@ strong {
   background: #f3c53b;
   padding: 10px;
   z-index: 100;
+}
+
+/* 
+Changes the color of the copyright symbol to a yellow shade
+*/
+.copyright {
+  color: #f3c53b;
 }
