@@ -1,17 +1,17 @@
 /* 
-I used a yellow tone as the primary color as it gets readers attention and
-gives feelings of happiness and warmth. I used a blue tone as the secondary 
-color because blue gives the feelings of trust and security to users. The
-neutral colors are a tones of white for the bacground and text bachgrounds 
-for simplicity and cleanliness, and my other nuetral color is black for the
-texts. I picked blue and yellow overall becaues they are mostly complementary
-colors and many brands or others like IKEA, Pokemon, Best Buy, Warner Bros,
-and the flag of Bosnia and Herzgovina uses them.
+  I used a yellow tone as the primary color as it gets readers attention and
+  gives feelings of happiness and warmth. I used a blue tone as the secondary 
+  color because blue gives the feelings of trust and security to users. The
+  neutral colors are a tones of white for the bacground and text bachgrounds 
+  for simplicity and cleanliness, and my other nuetral color is black for the
+  texts. I picked blue and yellow overall because they are mostly complementary
+  colors and many brands or others like IKEA, Pokemon, Best Buy, Warner Bros,
+  and the flag of Bosnia and Herzgovina uses them.
 */
 
 /*
-Make all elements include padding and border into the element size and makes
-the line height to a size of 140%
+  Make all elements include padding and border into the element size and makes
+  the line height to a size of 140%
 */
 * {
   box-sizing: border-box;
@@ -19,8 +19,8 @@ the line height to a size of 140%
 }
 
 /* 
-Removed the default space around the page, set the text color to black,
-and background color to a light gray 
+  Removed the default space around the page, set the text color to black,
+  and background color to a light gray 
 */
 html {
   font-size: 62.5%;
@@ -34,7 +34,7 @@ body {
 }
 
 /* 
-Header goes across the whole page width and has space on the top and bottom 
+  Header goes across the whole page width and has space on the top and bottom 
 */
 header {
   width: 100%;
@@ -44,8 +44,8 @@ header {
 }
 
 /* 
-Navigation list is evenly spaced, removed default padding and no bullets, 
-and centered it 
+  Navigation list is evenly spaced, removed default padding and no bullets, 
+  and centered it 
 */
 nav ul {
   display: flex;
@@ -78,8 +78,8 @@ nav ul li a:focus {
 }
 
 /* 
-Section that keeps content inside a max width and adds some space on 
-the sides so it doesn't touch the page edges 
+  Section that keeps content inside a max width and adds some space on 
+  the sides so it doesn't touch the page edges 
 */
 section {
   margin: 0 auto;
@@ -88,7 +88,7 @@ section {
 }
 
 /* 
-Changes the size to 40px and bottom margin to 20px 
+  Changes the size to 40px and bottom margin to 20px 
 */
 h1 {
   font-size: 4.4rem;
@@ -96,7 +96,7 @@ h1 {
 }
 
 /* 
-size to 35px and bottom space 20px 
+  size to 35px and bottom space 20px 
 */
 h2 {
   font-size: 2.8rem;
@@ -110,7 +110,7 @@ a {
 }
 
 /* 
-Makes paragraph text bigger fonted 
+  Makes paragraph text bigger fonted 
 */
 p {
   font-size: 2rem;
@@ -119,7 +119,7 @@ p {
 }
 
 /* 
-The wrapper automatically fits around the content 
+  The wrapper automatically fits around the content 
 */
 .flex-wrapper {
   display: flex;
@@ -137,7 +137,7 @@ The wrapper automatically fits around the content
 }
 
 /* 
-This element styles the image inside the box so it stays on the left 
+  This element styles the image inside the box so it stays on the left 
 */
 .flex-wrapper img {
   width: 45%;
@@ -151,7 +151,7 @@ This element styles the image inside the box so it stays on the left
 }
 
 /* 
-Images have black border to see better 
+  Images have black border to see better 
 */
 img {
   border-color: #212121;
@@ -162,7 +162,7 @@ img {
 }
 
 /* 
-Makes the footer background blue, and the text is centered 
+  Makes the footer background blue, and the text is centered 
 */
 footer {
   background-color: #4757cd;
@@ -174,7 +174,7 @@ footer {
 }
 
 /* 
-Skip link appears when pressing tab for accessibility
+  Skip link appears when pressing tab for accessibility
 */
 .skip-link {
   position: absolute;
@@ -186,7 +186,7 @@ Skip link appears when pressing tab for accessibility
 }
 
 /* 
-Styles the skip link when is focused by the cursor or tab
+  Styles the skip link when is focused by the cursor or tab
 */
 .skip-link:focus {
   left: 10px;
@@ -199,7 +199,7 @@ Styles the skip link when is focused by the cursor or tab
 }
 
 /* 
-Changes the color of the copyright symbol to a yellow shade
+  Changes the color of the copyright symbol to a yellow shade
 */
 .copyright {
   color: #f3c53b;
