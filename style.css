@@ -37,7 +37,6 @@ nav ul {
 
 nav ul li a {
   color: #1c1c1c; /* Makes the text color a dark color */
-  font-size: 2.2rem; /* Sets the font size into 22px */
   padding: 15px 25px; /* Adds padding around the text of 15 and 25px */
   display: block; /* This makes it so the entire button can click for convienience */
   background-color: #f3c53b; /* Turns the background into yellow to indicate the button */
@@ -46,10 +45,16 @@ nav ul li a {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow on the edges to make it raised */
 }
 
-nav ul li a:hover,
 nav ul li a:focus {
   background-color: #e0b22f; /* Turns into a darker yellow when hovered or focused */
   text-decoration: underline; /* Adds an underline when it is focused */
+}
+
+a:focus-visible,
+[tabindex="0"]:focus-visible {
+  /* This makes it so only the things that are focused with tab gets the outline */
+  outline: 3px solid; /* Adds an outline to the focused element */
+  outline-offset: 4px; /* Adds space between the outline and the element */
 }
 
 section {
