@@ -1,17 +1,14 @@
-/* 
-  I used a yellow tone as the primary color as it gets readers attention and
-  gives feelings of happiness and warmth. I used a blue tone as the secondary 
-  color because blue gives the feelings of trust and security to users. The
-  neutral colors are a tones of white for the bacground and text bachgrounds 
-  for simplicity and cleanliness, and my other nuetral color is black for the
-  texts. I picked blue and yellow overall because they are mostly complementary
-  colors and many brands or others like IKEA, Pokemon, Best Buy, Warner Bros,
-  and the flag of Bosnia and Herzgovina uses them.
+/* I used a yellow tone as the primary color because it grabs the reader's attention and 
+  gives feelings of happiness. I used blue as the secondary color for trust and security. 
+  I used white and light gray for the backgrounds to keep things simple and clean, and 
+  black for the text. I picked blue and yellow because they look good together and 
+  lots of famous brands like IKEA and Pokémon use them.
 */
 
-/*
-  Make all elements include padding and border into the element size and makes
-  the line height to a size of 140%
+/* 
+  The * is to make the padding and borders included in the total size of the boxes so 
+  they don't break the layout. I also set the line height to 140% so the sentences 
+  aren't squished and are easier to read.
 */
 * {
   box-sizing: border-box;
@@ -19,22 +16,25 @@
 }
 
 /* 
-  Removed the default space around the page, set the text color to black,
-  and background color to a light gray 
+  I set the font size to 62.5% so 16px is now 10px, which are easier for rem. 
 */
 html {
   font-size: 62.5%;
 }
 
+/* 
+  I chose a light gray background and a dark text color because there are 
+  lots of reading and those colors are fitting.
+*/
 body {
-  margin: 0;
   color: #1c1c1c;
   background-color: #eeeeee;
   font-size: 2rem;
 }
 
 /* 
-  Header goes across the whole page width and has space on the top and bottom 
+  I made the header a dark blue color and the padding for more space, 
+  and the margin bottom to separate from content.
 */
 header {
   width: 100%;
@@ -44,20 +44,24 @@ header {
 }
 
 /* 
-  Navigation list is evenly spaced, removed default padding and no bullets, 
-  and centered it 
+  I used flexbox to make the navigation links spread out evenly. I removed 
+  the bullets and centered the whole list and made it horizontal.
 */
 nav ul {
   display: flex;
   justify-content: space-evenly;
   gap: 60px;
   padding: 0;
-  margin: 0 auto;
   list-style: none;
   width: 100%;
   max-width: 1100px;
 }
 
+/* 
+  I styled the links into yellow buttons so they stand out, and I added a 
+  shadow to give them depth and a transition into a darker shade when 
+  mouse is hovered.
+*/
 nav ul li a {
   color: #000000;
   text-decoration: none;
@@ -71,6 +75,10 @@ nav ul li a {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* 
+  When the mouse is hovered over, it is a darker yellow and has an 
+  underline to show that it is selected for style.
+*/
 nav ul li a:hover,
 nav ul li a:focus {
   background-color: #e0b22f;
@@ -78,8 +86,9 @@ nav ul li a:focus {
 }
 
 /* 
-  Section that keeps content inside a max width and adds some space on 
-  the sides so it doesn't touch the page edges 
+  I created this section element to keep my texts and images in the 
+  middle of the website. I added padding on the sides so the text 
+  and images are not very close to the edge of the website.
 */
 section {
   margin: 0 auto;
@@ -88,15 +97,14 @@ section {
 }
 
 /* 
-  Changes the size to 40px and bottom margin to 20px 
+  Made the main title 4.4rem for readability.
 */
 h1 {
   font-size: 4.4rem;
-  margin-bottom: 20px;
 }
 
 /* 
-  size to 35px and bottom space 20px 
+  I made the size into 2.8rem and a sans-serif font to make it look clean.
 */
 h2 {
   font-size: 2.8rem;
@@ -104,13 +112,16 @@ h2 {
   margin-bottom: 20px;
 }
 
+/* 
+  Made the link texts into a 2rem font size which is the same 
+  as the paragraph for consistency.
+*/
 a {
   font-size: 2rem;
-  margin-bottom: 20px;
 }
 
 /* 
-  Makes paragraph text bigger fonted 
+  I made the paragraph 2rem and used a sans-serif font style.
 */
 p {
   font-size: 2rem;
@@ -119,7 +130,9 @@ p {
 }
 
 /* 
-  The wrapper automatically fits around the content 
+  Made the flex wrapper to conatain the texta and images. 
+  I added a border, a shadow on the edges, and a light 
+  gray background to have a contrast between the other background.
 */
 .flex-wrapper {
   display: flex;
@@ -136,8 +149,8 @@ p {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* 
-  This element styles the image inside the box so it stays on the left 
+/* I set the image width to 45% so it stays on the left and leaves 
+  plenty of room for the text next to it.
 */
 .flex-wrapper img {
   width: 45%;
@@ -146,12 +159,11 @@ p {
   border-radius: 3px;
   flex-shrink: 0;
   margin-right: 30px;
-  display: flex;
-  justify-content: center;
 }
 
 /* 
-Images have black border to see better 
+  Added a thin black border and rounded corners to my images 
+  just to make them look more clean.
 */
 img {
   border-color: #212121;
@@ -162,7 +174,8 @@ img {
 }
 
 /* 
-  Makes the footer background blue, and the text is centered 
+  I made the footer blue to match the header, and centered 
+  the footer text and into a white color.
 */
 footer {
   background-color: #3a4abb;
@@ -174,7 +187,8 @@ footer {
 }
 
 /* 
-  Skip link appears when pressing tab for accessibility
+  Made this skip link for screen readers that goes to the main 
+  content, and only able to be seen when pressing tab.
 */
 .skip-link {
   position: absolute;
@@ -186,7 +200,7 @@ footer {
 }
 
 /* 
-  Styles the skip link when is focused by the cursor or tab
+  Styles the skip link button when is focused by the tab.
 */
 .skip-link:focus {
   left: 10px;
@@ -199,7 +213,8 @@ footer {
 }
 
 /* 
-  Changes the color of the copyright symbol to a yellow shade
+  I changed the color of the copyright symbol to yellow to 
+  indicate the copyright.
 */
 .copyright {
   color: #f3c53b;
