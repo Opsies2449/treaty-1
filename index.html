@@ -14,45 +14,6 @@
     <title>Treaty 1</title>
 
     <link rel="stylesheet" href="styles/style.css" />
-
-    <style>
-      #banner {
-        position: relative; /* Lets me place things like the dark overlay inside it */
-        width: 95%; /* Makes the banner take up most of the width */
-        height: 550px; /* Sets a tall height so it is visible */
-        border-radius: 10px; /* Rounds the corners so the banner looks clean */
-        margin: 0 auto 80px auto; /* Centers the banner and adds gap below it */
-        background-image: url("images/treaty 1 flag.webp"); /* Makes the flag as a background. */
-        background-size: cover; /* Makes sure the image fills the whole banner area. */
-        background-position: center; /* Keeps the middle of the image */
-        display: flex; /* Helps me center the text inside the banner */
-        justify-content: center; /* Centers the title text horizontally */
-        align-items: center; /* Centers the title text vertically as well */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adds a shadow to make the banner look raised */
-      }
-
-      #banner::before {
-        content: ""; /* Makes the overlay appear */
-        position: absolute; /* Makes the overlay stretch across the banner */
-        inset: 0; /* Makes the dark shade cover every corner of the banner */
-        border-radius: 10px; /* Matches the rounded corners of the main banner */
-        background-color: rgba(
-          0,
-          0,
-          0,
-          0.55
-        ); /* Adds the dark tint so the white text is easy to read */
-        z-index: 0; /* Keeps the dark shade behind the text */
-      }
-
-      #banner h1 {
-        position: relative; /* Keeps the text on top of the dark overlay */
-        color: #eeeeee; /* Uses an off-white color so its easy to read */
-        text-align: center; /* Keeps the text centered */
-        letter-spacing: 2px; /* Adds a tiny bit of space between letters */
-        z-index: 1; /* Puts the text on the very top layer */
-      }
-    </style>
   </head>
 
   <body>
@@ -61,7 +22,7 @@
       <nav aria-label="Main navigation">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="treaty-text.html">Treaty Text</a></li>
+          <li><a href="treaty-terms.html">Treaty Terms</a></li>
           <li><a href="impact.html">Impact</a></li>
         </ul>
       </nav>
