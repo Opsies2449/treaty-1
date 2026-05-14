@@ -123,7 +123,7 @@ section {
 }
 
 /* 
-  Changes the size to 40px and bottom margin to 20px 
+  font size to 4.4rem and added space to the bottom
 */
 h1 {
   font-size: 4.4rem;
@@ -131,11 +131,11 @@ h1 {
 }
 
 /* 
-  size to 35px and bottom space 20px 
+  font size to 2.8rem and georgia font
 */
 h2 {
   font-size: 2.8rem;
-  font-family: "Courier New", Courier;
+  font-family: "Georgia";
   margin-bottom: 20px;
 }
 
@@ -236,7 +236,7 @@ footer {
 }
 
 /* 
-  Changes the color of the copyright symbol to a yellow shade
+  Makes the copyright symbol to yellow
 */
 .copyright {
   color: #f3c53b;
