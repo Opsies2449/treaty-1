@@ -1,12 +1,12 @@
 /* 
   I used a yellow tone as the primary color as it gets readers attention and
   gives feelings of happiness and warmth. I used a blue tone as the secondary 
-  color because blue gives the feelings of trust and security to users. The
-  neutral colors are a tones of white for the bacground and text bachgrounds 
-  for simplicity and cleanliness, and my other nuetral color is black for the
-  texts. I picked blue and yellow overall because they are mostly complementary
-  colors and many brands or others like IKEA, Pokemon, Best Buy, Warner Bros,
-  and the flag of Bosnia and Herzgovina uses them.
+  color because blue gives the feelings of trust to users, which is good for an 
+  information website. The neutral colors are a tones of white for the background 
+  and text backgrounds for simplicity and cleanliness, and my other neutral color 
+  is black for the texts. I picked blue and yellow overall because they are mostly 
+  complementary colors and many brands or others like IKEA, Pokemon, Best Buy, 
+  Warner Bros, and the flag of Bosnia and Herzgovina uses them.
 */
 
 /*
@@ -33,13 +33,11 @@ body {
   font-size: 2rem;
 }
 
-/* 
-  Header goes across the whole page width and has space on the top and bottom 
-*/
 header {
   width: 100%;
   padding: 40px 0;
-  background-color: #3a4abb;
+  background: #0575e6;
+  background: linear-gradient(to right, #021b79, #0d6ac8);
   margin-bottom: 60px;
 }
 
@@ -160,8 +158,10 @@ p {
 */
 .flex-wrapper {
   display: flex;
-  margin-top: 25px;
-  margin-bottom: 150px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 25px auto 150px;
+  height: 400px;
   border: 2px solid #212121;
   border-radius: 3px;
   background-color: #ebebeb;
@@ -174,23 +174,22 @@ p {
 }
 
 /* 
-  This element styles the image inside the box so it stays on the left 
+  These elements styles the image inside the box so it stays on the left 
 */
 .flex-wrapper img {
   width: 45%;
   max-width: 420px;
   min-width: 260px;
+  max-height: calc(100% - 60px);
   height: auto;
   border-radius: 3px;
   flex-shrink: 0;
   margin-right: 30px;
   display: flex;
   justify-content: center;
+  align-self: center;
 }
 
-/* 
-Images have black border to see better 
-*/
 img {
   border-color: #212121;
   border-style: solid;
@@ -200,10 +199,10 @@ img {
 }
 
 /* 
-  Makes the footer background blue, and the text is centered 
+  Makes the footer background a blue gradient, and the text is centered 
 */
 footer {
-  background-color: #3a4abb;
+  background: linear-gradient(to right, #0d6ac8, #021b79);
   padding: 50px 0;
   width: 100%;
   text-align: center;
