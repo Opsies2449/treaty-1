@@ -74,7 +74,6 @@ header {
   position: relative; /* Keeps the text on top of the dark overlay */
   color: #eeeeee; /* Uses an off-white color so its easy to read */
   text-align: center; /* Keeps the text centered */
-  letter-spacing: 2px; /* Adds a tiny bit of space between letters */
   z-index: 1; /* Puts the text on the very top layer */
 }
 
@@ -123,9 +122,10 @@ section {
 }
 
 /* 
-  font size to 4.4rem and added space to the bottom
+  font size to 4.4rem and added space to the bottom with a 3 px spacing in between
 */
 h1 {
+  letter-spacing: 3px;
   font-size: 4.4rem;
   margin-bottom: 20px;
 }
@@ -161,7 +161,6 @@ p {
   width: 100%;
   max-width: 1200px;
   margin: 25px auto 150px;
-  height: 400px;
   border: 2px solid #212121;
   border-radius: 3px;
   background-color: #ebebeb;
@@ -180,14 +179,11 @@ p {
   width: 45%;
   max-width: 420px;
   min-width: 260px;
-  max-height: calc(100% - 60px);
   height: auto;
   border-radius: 3px;
   flex-shrink: 0;
   margin-right: 30px;
-  display: flex;
-  justify-content: center;
-  align-self: center;
+  align-self: flex-start;
 }
 
 img {
